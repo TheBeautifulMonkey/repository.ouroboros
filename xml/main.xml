@@ -13,6 +13,7 @@
     </dir>
 
 <dir>
+<<<<<<< HEAD
      <name>[COLOR gold][B]LIVE[/COLOR][/B]</name>
      <link>https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/xml/live.xml</link>
      <animated_thumbnail></animated_thumbnail>
@@ -20,3 +21,10 @@
      <animated_fanart></animated_fanart>
      <fanart></fanart>
 </dir>
+=======
+  <title>NETWORKS</title>
+  <tmdb>network/shows/</tmdb>
+  <thumbnail></thumbnail>
+  <fantart></fantart>
+</dir>
+>>>>>>> a17e6e58abde8365adf575a139b8a6afde745440
