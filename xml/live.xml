@@ -1,1 +1,10 @@
 ###live.xml
+    <dir>
+    <title>[COLOR dodgerblue][B]LIVE TV CHANNELS[/COLOR][/B]</title>
+    <Airtable>tv_channels</Airtable>
+    </dir>
+
+    <dir>
+    <title>[COLOR dodgerblue][B]LIVE SPORTS CHANNELS[/COLOR][/B]</title>
+    <Airtable>sports_channels</Airtable>
+    </dir>
