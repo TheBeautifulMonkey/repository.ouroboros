@@ -1,13 +1,9 @@
 ####MAIN XML for Auryn
 
-<plugin>
-<name>[COLOR gold][B]The Auryn Settings[/COLOR][/B]</name>
-<link>plugin://plugin.video.auryn/?action=openSettings</link>
-<thumbnail>https://i.imgur.com/wCz1Jck.png</thumbnail>
-</plugin>
+
 
 <dir>
-    <title>[COLOR dodgerblue][B]NEWEST RELEASES[/COLOR][/B](Direct Links)</title>
+    <title>[COLOR gold][B]NEWEST RELEASES[/COLOR][/B](Direct Links)</title>
     <Airtable>newest_releases/page1</Airtable>
 	 <thumbnail></thumbnail>
     </dir>
@@ -20,3 +16,9 @@
      <animated_fanart></animated_fanart>
      <fanart></fanart>
 </dir>
+
+<plugin>
+<name>[COLOR gold][B]The Auryn Settings[/COLOR][/B]</name>
+<link>plugin://plugin.video.auryn/?action=openSettings</link>
+<thumbnail></thumbnail>
+</plugin>
