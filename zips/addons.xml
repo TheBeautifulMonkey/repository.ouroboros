@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.auryn" name="The Auryn" version="1.2" provider-name="TheBeautiful Monkey">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.resolveurl" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">Auryn</summary>
+      <description lang="en">Tu, was du wilst</description>
+      <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+      <platform>all</platform>
+        <website></website>
+        <video_guide></video_guide>
+    </extension>
+</addon>
+
+<addon id="repository.ouroboros" name="Ouroboros Repository" version="0.0.1" provider-name="TheBeautifulMonkey">
+	<extension point="xbmc.addon.repository" name="Ouroboros Repository">
+	<dir>
+	  <info compressed="false">http://teamuniversal.xyz/modules4all/addons.xml</info>
+	  <checksum>http://teamuniversal.xyz/modules4all/addons.xml.md5</checksum>
+	  <datadir zip="true">http://teamuniversal.xyz/modules4all/</datadir>
+	 </dir>
+		<info compressed="false">https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">ouroboros</summary>
+		<description lang="en">ouroboros</description>
+		<genre></genre>
+	</extension>
+</addon>
+</addons>
