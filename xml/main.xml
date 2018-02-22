@@ -1,7 +1,7 @@
 ####MAIN XML for Auryn
 
 <dir>
-  <title></title>
+  <title>NETWORKS</title>
   <tmdb>network/shows/</tmdb>
   <thumbnail></thumbnail>
   <fantart></fantart>
