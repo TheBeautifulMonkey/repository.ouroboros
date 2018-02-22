@@ -1,8 +1,22 @@
 ####MAIN XML for Auryn
 
+<plugin>
+<name>[COLOR gold][B]The Auryn Settings[/COLOR][/B]</name>
+<link>plugin://plugin.video.auryn/?action=openSettings</link>
+<thumbnail>https://i.imgur.com/wCz1Jck.png</thumbnail>
+</plugin>
+
 <dir>
-  <title></title>
-  <tmdb>network/shows/</tmdb>
-  <thumbnail></thumbnail>
-  <fantart></fantart>
+    <title>[COLOR dodgerblue][B]NEWEST RELEASES[/COLOR][/B](Direct Links)</title>
+    <Airtable>newest_releases/page1</Airtable>
+	 <thumbnail>https://i.imgur.com/v3q6WIw.png</thumbnail>
+    </dir>
+
+<dir>
+     <name>[COLOR gold][B]LIVE[/COLOR][/B]</name>
+     <link>https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/xml/live.xml</link>
+     <animated_thumbnail></animated_thumbnail>
+     <thumbnail>https://i.imgur.com/5ptmzJD.png</thumbnail>
+     <animated_fanart></animated_fanart>
+     <fanart></fanart>
 </dir>
