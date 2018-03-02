@@ -3,13 +3,13 @@
 
 
 <dir>
-    <title>[COLOR gold][B]NEWEST RELEASES[/COLOR][/B](Direct Links)</title>
+    <title>[COLOR gold][B]Real Debrid Movies[/COLOR][/B]</title>
     <Airtable>newest_releases/page1</Airtable>
 	 <thumbnail></thumbnail>
     </dir>
 
 <dir>
-     <name>[COLOR gold][B]LIVE[/COLOR][/B]</name>
+     <name>[COLOR gold][B]Live Channels[/COLOR][/B]</name>
      <link>https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/xml/live.xml</link>
      <animated_thumbnail></animated_thumbnail>
      <thumbnail></thumbnail>
