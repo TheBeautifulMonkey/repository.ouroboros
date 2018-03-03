@@ -41,8 +41,3 @@
 <thumbnail></thumbnail>
 </plugin>
 
-<plugin>
-<name>[COLOR gold][B]Authorize RD[/COLOR][/B]</name>
-<link>plugin://plugin.video.auryn/?action=openResolveURLSettings</link>
-<thumbnail></thumbnail>
-</plugin>
