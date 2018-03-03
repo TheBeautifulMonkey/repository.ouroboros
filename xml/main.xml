@@ -43,6 +43,6 @@
 
 <plugin>
 <name>[COLOR gold][B]Authorize RD[/COLOR][/B]</name>
-<link>plugin://plugin.video.auryn/?action=openResolverSettings</link>
+<link>plugin://plugin.video.auryn/?action=openResolveurlSettings</link>
 <thumbnail></thumbnail>
 </plugin>
