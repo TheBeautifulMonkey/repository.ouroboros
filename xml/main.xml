@@ -41,24 +41,14 @@
 <thumbnail></thumbnail>
 </plugin>
 
-
-
-
-
 <plugin>
-<name>[COLOR red]Real Debrid UrlResolver Login[/COLOR]</name>
+<name>[COLOR gold][B](Re)Authorize Real-Debrid[/COLOR][/B]</name>
 <link>plugin://script.module.urlresolver/?mode=auth_rd</link>
 <thumbnail>http://koditips.com/wp-content/uploads/real-debrid-addon.png</thumbnail>
 <fanart></fanart>
 </plugin>
 
 
-<plugin>
-<name>[COLOR red]Real Debrid Resolveurl Login[/COLOR]</name>
-<link>plugin://script.module.resolveurl/?mode=auth_rd</link>
-<thumbnail>http://koditips.com/wp-content/uploads/real-debrid-addon.png</thumbnail>
-<fanart></fanart>
-</plugin>
 
 
 
