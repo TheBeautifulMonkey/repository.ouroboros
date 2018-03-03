@@ -41,3 +41,9 @@
 <thumbnail></thumbnail>
 </plugin>
 
+<plugin>
+<name>[COLOR gold][B]RD[/COLOR][/B]</name>
+<link>plugin://plugin.script.resolveurl/?action=openResolverSettings</link>
+<thumbnail></thumbnail>
+</plugin>
+
