@@ -7,6 +7,24 @@
     <Airtable>newest_releases/page1</Airtable>
 	 <thumbnail></thumbnail>
     </dir>
+	
+	<dir>
+     <name>[COLOR gold][B]Movies[/COLOR][/B]</name>
+     <link>https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/xml/movies.xml</link>
+     <animated_thumbnail></animated_thumbnail>
+     <thumbnail></thumbnail>
+     <animated_fanart></animated_fanart>
+     <fanart></fanart>
+</dir>
+
+	<dir>
+     <name>[COLOR gold][B]TV[/COLOR][/B]</name>
+     <link>https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/xml/tv.xml</link>
+     <animated_thumbnail></animated_thumbnail>
+     <thumbnail></thumbnail>
+     <animated_fanart></animated_fanart>
+     <fanart></fanart>
+</dir>
 
 <dir>
      <name>[COLOR gold][B]Live Channels[/COLOR][/B]</name>

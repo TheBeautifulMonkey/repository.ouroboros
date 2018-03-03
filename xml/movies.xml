@@ -1,0 +1,44 @@
+<dir>
+  <title>Trending</title>
+  <trakt>https://api.trakt.tv/movies/trending</trakt>
+</dir>
+
+<dir>
+  <title>Popular</title>
+  <trakt>https://api.trakt.tv/movies/popular</trakt>
+</dir>
+
+<dir>
+  <title>TMDB Movies Popular</title>
+  <tmdb>movies/popular</tmdb>
+</dir>
+
+<dir>
+  <title>Now Playing</title>
+  <tmdb>movies/now_playing</tmdb>
+</dir>
+
+<dir>
+  <title>Top Rated</title>
+  <tmdb>movies/top_rated</tmdb>
+</dir>
+<dir>
+    <title>Genres</title>
+    <link>file://shared lists/genre_movies.xml</link>
+  </dir>
+  
+<dir>
+    <title>Years</title>
+    <link>file://shared lists/movie-years.xml</link>
+  </dir>
+
+<dir>
+  <title>Search 1</title>
+  <tmdb>search</tmdb>
+	<thumbnail></thumbnail>
+</dir>
+<dir>
+  <title>Search 2</title>
+  <trakt>search</trakt>
+	<thumbnail></thumbnail>
+</dir>
