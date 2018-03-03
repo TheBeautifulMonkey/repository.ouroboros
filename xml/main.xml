@@ -42,9 +42,5 @@
 </plugin>
 
 
-<plugin>
-<name>[COLOR gold][B]RD TEST[/COLOR][/B]</name>
-<link>plugin://plugin.script.resolveurl/?action=openResolverSettings</link>
-<thumbnail></thumbnail>
-</plugin>
+
 
