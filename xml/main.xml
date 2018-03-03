@@ -41,6 +41,10 @@
 <thumbnail></thumbnail>
 </plugin>
 
+
+
+
+
 <plugin>
 <name>[COLOR red]Real Debrid UrlResolver Login[/COLOR]</name>
 <link>plugin://script.module.urlresolver/?mode=auth_rd</link>
