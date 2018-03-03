@@ -1,6 +1,6 @@
-# Addon Name: Auryn
-# Addon id: plugin.video.auryn
-# Addon Provider: Beautiful Monkey
+# Addon Name: Doge
+# Addon id: plugin.video.doge
+# Addon Provider: Doge
 msgid ""
 msgstr ""
 "Project-Id-Version: Jen\n"
@@ -12,6 +12,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30200"
+msgid "[COLOR teal]use-account[/COLOR]"
+msgstr ""
+
+msgctxt "#30201"
+msgid "username"
+msgstr ""
+
+msgctxt "#30202"
+msgid "password"
+msgstr ""
+
+msgctxt "#30203"
+msgid "hide-successful-login-messages"
+msgstr ""
 
 msgctxt "#30401"
 msgid "[COLOR teal]Are You Sure?[/COLOR]"

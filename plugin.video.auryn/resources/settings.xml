@@ -1,6 +1,10 @@
 <settings>
         <!-- customization settings -->
     <category label="Customization">
+	  <setting id="use-account" type="bool" label="30200" default="false"/>
+      <setting id="username" type="text" label="30201" default="" enable="!eq(-1,false)"/>
+      <setting id="password" type="text" label="30202" default="" option="hidden" enable="!eq(-2,false)"/>
+      <setting id="hide-successful-login-messages" type="bool" label="30203" default="false" enable="!eq(-3,false)"/>
       <setting label="Display" type="lsep"/>
       <setting label="Enable Settings Context item" type="bool" id="settings_context" default="true"/>
       <setting label="Enable Trailer Context item" type="bool" id="trailer_context" default="true"/>
@@ -11,7 +15,7 @@
                id="language_id" default="system"/>
       <setting label="32507" type="lsep"/>
       <setting label="30717" type="bool" id="metadata" default="true"/>
-      <setting label="Disable metadata Dialog" type="bool" id="disable_metadata_dialog" default="false"/>
+      <setting label="Disable metadata Dialog" type="bool" id="disable_metadata_dialog" default="true"/>
       <setting label="32508" type="select" values="Trakt|TMDB" id="movie_metadata_provider" default="Trakt"/>
       <setting label="32509" type="select" values="Trakt|TVDB" id="tv_metadata_provider" default="Trakt"/>
       <setting label="32510" type="lsep"/>
@@ -62,11 +66,11 @@
       <!-- debugging and developer options -->
       <setting id="debug" type="bool" label="30758" default="false" visible="true"/>
       <setting id="first_run" label="first run" type="bool" default="false" visible="false"/>
-      <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.jen/"/>
-      <setting label="TVDb api key" type="text" id="tvdb_api_key" option="hidden" default="" visible="eq(-3,true)"/>
-      <setting label="TMDb api key" type="text" id="tmdb_api_key" option="hidden" default="" visible="eq(-4,true)"/>
-      <setting label="Trakt client id" type="text" id="trakt_api_client_id" option="hidden" default="" visible="eq(-5,true)"/>
-      <setting label="Trakt client secret" type="text" id="trakt_api_client_secret" option="hidden" visible="!eq(-1,8b3c509d7ae20fb31efcf95a7f030da562c37a8f0d9cd100db6ac1a41970f8ac) + eq(-6,true)" default=""/>
+      <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.auryn/"/>
+      <setting label="TVDb api key" type="text" id="" option="hidden" default="" visible="eq(-3,true)"/>
+      <setting label="TMDb api key" type="text" id="" option="hidden" default="" visible="eq(-4,true)"/>
+      <setting label="Trakt client id" type="text" id="" option="hidden" default="" visible="eq(-5,true)"/>
+      <setting label="Trakt client secret" type="text" id="" option="hidden" visible="!eq(-1,8b3c509d7ae20fb31efcf95a7f030da562c37a8f0d9cd100db6ac1a41970f8ac) + eq(-6,true)" default=""/>
       <setting label="Last.fm api key" type="text" id="lastfm_api_key" option="hidden" default="" visible="eq(-7,true)"/>
       <setting label="Last.fm secret" type="text" id="lastfm_secret" option="hidden" visible="!eq(-1,3ec34c514a9230ebf006c8e24a8419d6) + eq(-8,true)" default=""/>
       <setting id="TRAKT_ACCESS_TOKEN" label="" type="text" visible="false"/>

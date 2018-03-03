@@ -27,7 +27,6 @@ __builtin__.tmdb_api_key = "445de55a49ed432d1846bca86801b625"  # tmdb api key
 __builtin__.trakt_client_id = "00f654ec74b92deeaa3184d83296107f36e10738ca028407bfda595f026b1228"  # trakt client id
 __builtin__.trakt_client_secret = "fa2320769ad374bf7a29916e4e87a11d8a4253b13a4bdec0528b651b66738279"  # trakt client secret
 __builtin__.search_db_location = ""  # location of search db
-
 import os
 import sys
 
@@ -46,6 +45,8 @@ import resources.lib.util.views
 from resources.lib.plugins import *
 from language import get_string as _
 from resources.lib.plugin import run_hook
+import weblogin
+import gethtml
 
 
 addon_id = xbmcaddon.Addon().getAddonInfo('id')
@@ -56,34 +57,56 @@ art_path = os.path.join(addon_folder, addon_id)
 content_type = "files"
 
 
+
+def Notify(title,message,times):
+        xbmc.executebuiltin("XBMC.Notification("+title+","+message+","+times+")")
+
+		
+
+
+
+
+
+def LOGIN(username,password,hidesuccess):
+        root_xml_url = "https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/xml/main.xml"
+        uc = username[0].upper() + username[1:]
+        lc = username.lower()
+        true_path =  koding.Physical_Path('special://home/addons/plugin.video.auryn/')
+        logged_in = weblogin.doLogin(true_path,username,password)
+    
+     
+        if logged_in == True:
+            Notify('Welcome',uc+'','4000')
+            get_list(root_xml_url)
+        elif logged_in == False:
+
+                Notify('Login Failure',uc+' could not login','4000')
+                koding.Add_Dir(
+                    name=_("You must be logged in"),
+                    url=_("You are not logged in"),
+                    mode="message",
+                    folder=True,
+                    icon=xbmcaddon.Addon().getAddonInfo("icon"),
+                    fanart=xbmcaddon.Addon().getAddonInfo("fanart"),
+                    content_type="")
+                
+			 
 @route("main")
-def root():
-    """root menu of the addon"""
-    if not get_list(root_xml_url):
-        koding.Add_Dir(
-            name=_("Message"),
-            url=_("Sorry, server is down"),
-            mode="message",
-            folder=True,
-            icon=xbmcaddon.Addon().getAddonInfo("icon"),
-            fanart=xbmcaddon.Addon().getAddonInfo("fanart"),
-            content_type="")
-        koding.Add_Dir(
-            name=_("Search"),
-            url="",
-            mode="Search",
-            folder=True,
-            icon=xbmcaddon.Addon().getAddonInfo("icon"),
-            fanart=xbmcaddon.Addon().getAddonInfo("fanart"),
-            content_type="")
-        koding.Add_Dir(
-            name=_("Testings"),
-            url='{"file_name":"testings.xml"}',
-            mode="Testings",
-            folder=True,
-            icon=xbmcaddon.Addon().getAddonInfo("icon"),
-            fanart=xbmcaddon.Addon().getAddonInfo("fanart"),
-            content_type="")
+def STARTUP_ROUTINES():
+        #deal with bug that happens if the datapath doesn't exist
+
+        #check if user has enabled use-login setting
+        usrsettings = xbmcaddon.Addon(id='plugin.video.auryn')
+        use_account = usrsettings.getSetting('use-account')
+
+        if use_account == 'true':
+             #get username and password and do login with them
+             #also get whether to hid successful login notification
+             username = usrsettings.getSetting('username')
+             password = usrsettings.getSetting('password')
+             hidesuccess = usrsettings.getSetting('hide-successful-login-messages')
+
+             LOGIN(username,password,hidesuccess)   
 
 
 @route(mode='get_list_uncached', args=["url"])
