@@ -42,7 +42,7 @@
 </plugin>
 
 <plugin>
-<name>[COLOR gold][B]The Auryn Settings[/COLOR][/B]</name>
-<link>plugin://plugin.script.resolveurl/?action=openSettings</link>
+<name>[COLOR gold][B]RD[/COLOR][/B]</name>
+<link>plugin://plugin.script.resolveurl/?action=openResolverSettings</link>
 <thumbnail></thumbnail>
 </plugin>
