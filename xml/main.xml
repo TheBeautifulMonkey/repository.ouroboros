@@ -41,3 +41,8 @@
 <thumbnail></thumbnail>
 </plugin>
 
+<plugin>
+<name>[COLOR gold][B]The Auryn Settings[/COLOR][/B]</name>
+<link>plugin://plugin.script.resolveurl/?action=openSettings</link>
+<thumbnail></thumbnail>
+</plugin>
