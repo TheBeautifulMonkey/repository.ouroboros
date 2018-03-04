@@ -43,7 +43,7 @@
 
 <plugin>
 <name>[COLOR gold][B](Re)Authorize Real-Debrid[/COLOR][/B]</name>
-<link>plugin://script.module.urlresolver/?mode=auth_rd</link>
+<link>plugin://script.module.resolveurl/?mode=auth_rd</link>
 <thumbnail>http://koditips.com/wp-content/uploads/real-debrid-addon.png</thumbnail>
 <fanart></fanart>
 </plugin>
