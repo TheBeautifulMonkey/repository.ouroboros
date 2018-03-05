@@ -1,5 +1,5 @@
 # repository.ouroboros
-ouroboros repo
+# NOTE TO VISITORS The Auryn is a private addon and is password protected and is useless to Youtubers, Bloggers and Twittards. 
 
 AURYN is a talisman from the novel Die Unendliche Geschicte (The Neverending Story), also featured in the movie as a mystical necklace referenced as "The Gem - The Glory". A double headed serpent biting its own tail, or two mythological serpents symetrically biting one another's tail form an oval yet are not intertwined, in the book. 
 
