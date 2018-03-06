@@ -22,10 +22,10 @@ import __builtin__
 # -----------------------
 # change these to suit your addons
 root_xml_url = "http://laffinatcha.stream/xml/main.xml"  # url of the root xml file
-__builtin__.tvdb_api_key = "BOB2F5655863A077"  # tvdb api key
-__builtin__.tmdb_api_key = "445de55a49ed432d1846bca86801b625"  # tmdb api key
-__builtin__.trakt_client_id = "00f654ec74b92deeaa3184d83296107f36e10738ca028407bfda595f026b1228"  # trakt client id
-__builtin__.trakt_client_secret = "fa2320769ad374bf7a29916e4e87a11d8a4253b13a4bdec0528b651b66738279"  # trakt client secret
+__builtin__.tvdb_api_key = "C7A8191D1F7BC057"  # tvdb api key
+__builtin__.tmdb_api_key = "05b8c455ccde53aed0a77bb435c88c1d"  # tmdb api key
+__builtin__.trakt_client_id = "4a88a5685b4aba1b469c2e97bbebc79074878760e0cae53e02dd4face2b2b4f6"  # trakt client id
+__builtin__.trakt_client_secret = "216746ebdf0f0de597364a2c85e4b20a40bd0684f3110b3f5726f844ead12ecb"  # trakt client secret
 __builtin__.search_db_location = ""  # location of search db
 import os
 import sys
