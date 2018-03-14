@@ -26,7 +26,7 @@
     </extension>
 </addon>
 
-<addon id="repository.ouroboros" name="Ouroboros Repository" version="0.0.2" provider-name="TheBeautifulMonkey">
+<addon id="repository.ouroboros" name="Ouroboros Repository" version="0.0.3" provider-name="TheBeautifulMonkey">
 	<extension point="xbmc.addon.repository" name="Ouroboros Repository">
 		<dir>
                 <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
