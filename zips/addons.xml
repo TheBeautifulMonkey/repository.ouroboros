@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.auryn" name="[COLOR gold][B]The Auryn[/COLOR][/B]" version="1.7" provider-name="[COLOR gold][I]The Beautiful Monkey[/COLOR][/I]">
+<addon id="plugin.video.auryn" name="[COLOR gold][B]The Auryn[/COLOR][/B]" version="1.8" provider-name="[COLOR gold][I]The Beautiful Monkey[/COLOR][/I]">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
