@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.ouroboros" name="Ouroboros Repository" version="0.0.3" provider-name="TheBeautifulMonkey">
+<addon id="repository.ouroboros" name="Ouroboros Repository" version="0.0.4" provider-name="TheBeautifulMonkey">
 	<extension point="xbmc.addon.repository" name="Ouroboros Repository">
 		<dir>
-                <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
-        </dir>
-
-		<info compressed="false">https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/zips/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/zips/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/zips/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/TheBeautifulMonkey/repository.ouroboros/master/zips/</datadir>
+		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">ouroboros</summary>
