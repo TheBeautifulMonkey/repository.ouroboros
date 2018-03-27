@@ -190,7 +190,8 @@ def new_releases(url):
         
     for link5,link4,tmdb,link1,link3,link2,title,year in page_num:
         if "-*-" in link2:
-            (thumbnail, fanart, imdb) = pull_tmdb(title,year,tmdb)
+            (thumbnail, fanart, imdb, summary) = pull_tmdb(title,year,tmdb)
+            summary = remove_non_ascii(summary)
             title = remove_non_ascii(title)
             link2 = link2.replace("-*-","")
             xml += "<item>"\
@@ -202,16 +203,17 @@ def new_releases(url):
                     "<year>%s</year>"\
                     "<thumbnail>%s</thumbnail>"\
                     "<fanart>%s</fanart>"\
-                    "<summary></summary>"\
+                    "<summary>%s</summary>"\
                     "</meta>"\
                     "<link>"\
                     "<sublink>%s</sublink>"\
                     "<sublink>search</sublink>"\
                     "<sublink>searchsd</sublink>"\
                     "</link>"\
-                    "</item>" % (title,imdb,title,year,thumbnail,fanart,link1)
+                    "</item>" % (title,imdb,title,year,thumbnail,fanart,summary,link1)
         elif "-*-" in link3:
-            (thumbnail, fanart, imdb) = pull_tmdb(title,year,tmdb)
+            (thumbnail, fanart, imdb, summary) = pull_tmdb(title,year,tmdb)
+            summary = remove_non_ascii(summary)
             title = remove_non_ascii(title)
             link3 = link3.replace("-*-","")
             xml += "<item>"\
@@ -223,7 +225,7 @@ def new_releases(url):
                     "<year>%s</year>"\
                     "<thumbnail>%s</thumbnail>"\
                     "<fanart>%s</fanart>"\
-                    "<summary></summary>"\
+                    "<summary>%s</summary>"\
                     "</meta>"\
                     "<link>"\
                     "<sublink>%s</sublink>"\
@@ -231,9 +233,10 @@ def new_releases(url):
                     "<sublink>search</sublink>"\
                     "<sublink>searchsd</sublink>"\
                     "</link>"\
-                    "</item>" % (title,imdb,title,year,thumbnail,fanart,link1,link2)
+                    "</item>" % (title,imdb,title,year,thumbnail,fanart,summary,link1,link2)
         elif "-*-" in link4:
-            (thumbnail, fanart, imdb) = pull_tmdb(title,year,tmdb)
+            (thumbnail, fanart, imdb, summary) = pull_tmdb(title,year,tmdb)
+            summary = remove_non_ascii(summary)
             title = remove_non_ascii(title)
             link4 = link4.replace("-*-","")
             xml += "<item>"\
@@ -245,7 +248,7 @@ def new_releases(url):
                     "<year>%s</year>"\
                     "<thumbnail>%s</thumbnail>"\
                     "<fanart>%s</fanart>"\
-                    "<summary></summary>"\
+                    "<summary>%s</summary>"\
                     "</meta>"\
                     "<link>"\
                     "<sublink>%s</sublink>"\
@@ -254,9 +257,10 @@ def new_releases(url):
                     "<sublink>search</sublink>"\
                     "<sublink>searchsd</sublink>"\
                     "</link>"\
-                    "</item>" % (title,imdb,title,year,thumbnail,fanart,link1,link2,link3)                
+                    "</item>" % (title,imdb,title,year,thumbnail,fanart,summary,link1,link2,link3)                
         elif "-*-" in link5:
-            (thumbnail, fanart, imdb) = pull_tmdb(title,year,tmdb)
+            (thumbnail, fanart, imdb, summary) = pull_tmdb(title,year,tmdb)
+            summary = remove_non_ascii(summary)
             title = remove_non_ascii(title)
             link5 = link5.replace("-*-","")
             xml += "<item>"\
@@ -268,7 +272,7 @@ def new_releases(url):
                     "<year>%s</year>"\
                     "<thumbnail>%s</thumbnail>"\
                     "<fanart>%s</fanart>"\
-                    "<summary></summary>"\
+                    "<summary>%s</summary>"\
                     "</meta>"\
                     "<link>"\
                     "<sublink>%s</sublink>"\
@@ -278,9 +282,10 @@ def new_releases(url):
                     "<sublink>search</sublink>"\
                     "<sublink>searchsd</sublink>"\
                     "</link>"\
-                    "</item>" % (title,imdb,title,year,thumbnail,fanart,link1,link2,link3,link4)
+                    "</item>" % (title,imdb,title,year,thumbnail,fanart,summary,link1,link2,link3,link4)
         else:
-            (thumbnail, fanart, imdb) = pull_tmdb(title,year,tmdb)
+            (thumbnail, fanart, imdb, summary) = pull_tmdb(title,year,tmdb)
+            summary = remove_non_ascii(summary)
             title = remove_non_ascii(title)                  
             xml += "<item>"\
                     "<title>%s</title>"\
@@ -291,7 +296,7 @@ def new_releases(url):
                     "<year>%s</year>"\
                     "<thumbnail>%s</thumbnail>"\
                     "<fanart>%s</fanart>"\
-                    "<summary></summary>"\
+                    "<summary>%s</summary>"\
                     "</meta>"\
                     "<link>"\
                     "<sublink>%s</sublink>"\
@@ -302,7 +307,7 @@ def new_releases(url):
                     "<sublink>search</sublink>"\
                     "<sublink>searchsd</sublink>"\
                     "</link>"\
-                    "</item>" % (title,imdb,title,year,thumbnail,fanart,link1,link2,link3,link4,link5)
+                    "</item>" % (title,imdb,title,year,thumbnail,fanart,summary,link1,link2,link3,link4,link5)
     xml += "<dir>"\
            "<title>[COLOR white ]%s[/COLOR]                [COLOR dodgerblue]Next Page >>[/COLOR]</title>"\
            "<Airtable>new_releases/%s</Airtable>"\
@@ -383,7 +388,8 @@ def newest_releases(url):
         
     for link5,link4,tmdb,link1,link3,link2,title,year in page_num:
         if "-*-" in link2:
-            (thumbnail, fanart, imdb) = pull_tmdb(title,year,tmdb)
+            (thumbnail, fanart, imdb, summary) = pull_tmdb(title,year,tmdb)
+            summary = remove_non_ascii(summary)
             title = remove_non_ascii(title)
             link2 = link2.replace("-*-","")
             xml += "<item>"\
@@ -395,16 +401,17 @@ def newest_releases(url):
                     "<year>%s</year>"\
                     "<thumbnail>%s</thumbnail>"\
                     "<fanart>%s</fanart>"\
-                    "<summary></summary>"\
+                    "<summary>%s</summary>"\
                     "</meta>"\
                     "<link>"\
                     "<sublink>%s</sublink>"\
                     "<sublink>search</sublink>"\
                     "<sublink>searchsd</sublink>"\
                     "</link>"\
-                    "</item>" % (title,imdb,title,year,thumbnail,fanart,link1)
+                    "</item>" % (title,imdb,title,year,thumbnail,fanart,summary,link1)
         elif "-*-" in link3:
-            (thumbnail, fanart, imdb) = pull_tmdb(title,year,tmdb)
+            (thumbnail, fanart, imdb, summary) = pull_tmdb(title,year,tmdb)
+            summary = remove_non_ascii(summary)
             title = remove_non_ascii(title)
             link3 = link3.replace("-*-","")
             xml += "<item>"\
@@ -416,7 +423,7 @@ def newest_releases(url):
                     "<year>%s</year>"\
                     "<thumbnail>%s</thumbnail>"\
                     "<fanart>%s</fanart>"\
-                    "<summary></summary>"\
+                    "<summary>%s</summary>"\
                     "</meta>"\
                     "<link>"\
                     "<sublink>%s</sublink>"\
@@ -424,9 +431,10 @@ def newest_releases(url):
                     "<sublink>search</sublink>"\
                     "<sublink>searchsd</sublink>"\
                     "</link>"\
-                    "</item>" % (title,imdb,title,year,thumbnail,fanart,link1,link2)
+                    "</item>" % (title,imdb,title,year,thumbnail,fanart,summary,link1,link2)
         elif "-*-" in link4:
-            (thumbnail, fanart, imdb) = pull_tmdb(title,year,tmdb)
+            (thumbnail, fanart, imdb, summary) = pull_tmdb(title,year,tmdb)
+            summary = remove_non_ascii(summary)
             title = remove_non_ascii(title)
             link4 = link4.replace("-*-","")
             xml += "<item>"\
@@ -438,7 +446,7 @@ def newest_releases(url):
                     "<year>%s</year>"\
                     "<thumbnail>%s</thumbnail>"\
                     "<fanart>%s</fanart>"\
-                    "<summary></summary>"\
+                    "<summary>%s</summary>"\
                     "</meta>"\
                     "<link>"\
                     "<sublink>%s</sublink>"\
@@ -447,9 +455,10 @@ def newest_releases(url):
                     "<sublink>search</sublink>"\
                     "<sublink>searchsd</sublink>"\
                     "</link>"\
-                    "</item>" % (title,imdb,title,year,thumbnail,fanart,link1,link2,link3)                
+                    "</item>" % (title,imdb,title,year,thumbnail,fanart,summary,link1,link2,link3)                
         elif "-*-" in link5:
-            (thumbnail, fanart, imdb) = pull_tmdb(title,year,tmdb)
+            (thumbnail, fanart, imdb, summary) = pull_tmdb(title,year,tmdb)
+            summary = remove_non_ascii(summary)
             title = remove_non_ascii(title)
             link5 = link5.replace("-*-","")
             xml += "<item>"\
@@ -461,7 +470,7 @@ def newest_releases(url):
                     "<year>%s</year>"\
                     "<thumbnail>%s</thumbnail>"\
                     "<fanart>%s</fanart>"\
-                    "<summary></summary>"\
+                    "<summary>%s</summary>"\
                     "</meta>"\
                     "<link>"\
                     "<sublink>%s</sublink>"\
@@ -471,9 +480,10 @@ def newest_releases(url):
                     "<sublink>search</sublink>"\
                     "<sublink>searchsd</sublink>"\
                     "</link>"\
-                    "</item>" % (title,imdb,title,year,thumbnail,fanart,link1,link2,link3,link4)
+                    "</item>" % (title,imdb,title,year,thumbnail,fanart,summary,link1,link2,link3,link4)
         else:
-            (thumbnail, fanart, imdb) = pull_tmdb(title,year,tmdb)
+            (thumbnail, fanart, imdb, summary) = pull_tmdb(title,year,tmdb)
+            summary = remove_non_ascii(summary)
             title = remove_non_ascii(title)                  
             xml += "<item>"\
                     "<title>%s</title>"\
@@ -484,7 +494,7 @@ def newest_releases(url):
                     "<year>%s</year>"\
                     "<thumbnail>%s</thumbnail>"\
                     "<fanart>%s</fanart>"\
-                    "<summary></summary>"\
+                    "<summary>%s</summary>"\
                     "</meta>"\
                     "<link>"\
                     "<sublink>%s</sublink>"\
@@ -495,10 +505,10 @@ def newest_releases(url):
                     "<sublink>search</sublink>"\
                     "<sublink>searchsd</sublink>"\
                     "</link>"\
-                    "</item>" % (title,imdb,title,year,thumbnail,fanart,link1,link2,link3,link4,link5)
+                    "</item>" % (title,imdb,title,year,thumbnail,fanart,summary,link1,link2,link3,link4,link5)
     xml += "<dir>"\
            "<title>[COLOR white ]%s[/COLOR]                [COLOR dodgerblue]Next Page >>[/COLOR]</title>"\
-           "<Airtable>new_releases/%s</Airtable>"\
+           "<Airtable>newest_releases/%s</Airtable>"\
            "<thumbnail>http://www.clker.com/cliparts/a/f/2/d/1298026466992020846arrow-hi.png</thumbnail>"\
            "</dir>" % (url, call)
 
@@ -514,9 +524,10 @@ def pull_tmdb(title,year,tmdb):
         thumbnail = (match['poster_path'])
         fanart = (match['backdrop_path'])
         imdb = (match['imdb_id'])
+        summary = (match['overview'])
         thumbnail = "https://image.tmdb.org/t/p/original"+str(thumbnail)
         fanart = "https://image.tmdb.org/t/p/original"+str(fanart)
-        return thumbnail,fanart,imdb
+        return thumbnail,fanart,imdb,summary
 
     except:
         return "","",""
